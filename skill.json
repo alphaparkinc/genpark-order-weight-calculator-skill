@@ -1,0 +1,37 @@
+{
+  "name": "order-weight-calculator-skill",
+  "version": "1.0.0",
+  "description": "Aggregates physical weight metrics of item SKU counts inside carts to return overall package net and gross estimates.",
+  "author": "alphaparkinc",
+  "category": "logistics",
+  "tags": [
+    "logistics",
+    "shipping",
+    "cart",
+    "weight-scale",
+    "packaging"
+  ],
+  "inputs": {
+    "items": {
+      "type": "array",
+      "description": "Cart items: [{sku, quantity, unit_weight_lbs}]."
+    },
+    "tare_box_weight_lbs": {
+      "type": "number",
+      "description": "Empty box structural weight added.",
+      "default": 0.5
+    }
+  },
+  "outputs": {
+    "net_weight_lbs": {
+      "type": "number",
+      "description": "Sum of product unit weights."
+    },
+    "gross_weight_lbs": {
+      "type": "number",
+      "description": "Net weight plus tare packaging weight."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
