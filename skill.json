@@ -1,5 +1,5 @@
 {
-  "name": "order-weight-calculator-skill",
+  "name": "genpark-order-weight-calculator-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Aggregates physical weight metrics of item SKU counts inside carts to return overall package net and gross estimates.",
   "author": "genpark",
