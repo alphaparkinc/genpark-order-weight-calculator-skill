@@ -1,4 +1,4 @@
-# order-weight-calculator-skill
+# genpark-order-weight-calculator-skill
 
 > **GenPark AI Agent Skill** -- Shopping cart shipping weight compiler.
 
